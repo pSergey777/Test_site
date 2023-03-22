@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  background-color: rgba(31, 31, 31, 0.8784313725);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: rgba(31, 31, 31, 0.8784313725);
+}
+
+.authentification {
+  width: 50%;
+  height: 30%;
+  background-color: rgb(76, 76, 76);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 50px;
+  margin-top: 5%;
+}
+
+.authentification_title {
+  display: block;
+  color: white;
+  font-size: 44px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login, .password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  position: relative;
+}
+
+input, button {
+  background-color: rgb(100, 100, 100);
+  color: black;
+}
+
+form:last-child button {
+  margin-left: 4px;
+  color: #ffffff;
+  height: 100%;
+  padding: 0 5px;
+  cursor: pointer;
+  height: 32%;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+  cursor: url(/img/cursor.svg) 4 12, auto;
+  cursor: nwse-resize;
+}
+
+.see_pass {
+  position: absolute;
+  top: 4px;
+  right: 18px;
+}
+
+.see_pass:last-of-type img {
+  height: 12px;
+}
+
+.error {
+  color: red;
+  border: none solid #000;
+  background: rgba(31, 31, 31, 0.8784313725);
+  width: 180px;
+  border-radius: 0px 15px 15px 15px;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form:last-of-type .error_sign_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 85%;
+  border-radius: 15px 15px 15px 15px;
+}/*# sourceMappingURL=authentification.css.map */

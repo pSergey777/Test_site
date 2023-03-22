@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authentification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/authentification.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="img/apple.png" alt="apple">
+            <div class="authentification"> 
+                <title class="authentification_title">Авторизация</title>
+                <form action="" class="form">
+                    <div class="login">
+                        <input type="text" autocomplete="on" placeholder="login" class="input_login">
+                        <label class="error" id="errorLogin"></label>
+                    </div>
+                    <div class="password">
+                        <input type="password" name="password" id="" autocomplete="on" placeholder="password" class="input_password">
+                        <a href="#" class="see_pass"><img src="img/eye-slash-solid.svg" alt="eye" class="see_pass_img"></a>
+                        <label class="error" id="errorPass"></label>
+                    </div>
+                    <button type="submit" class="btn_link">Войти</button>                    
+                    <label class="error_sign_in" id="errorSignIn"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/authentification.js"></script>
+</body>
+</html>
