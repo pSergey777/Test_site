@@ -1,0 +1,40 @@
+*{
+    font-family: 'Ubuntu Condensed', sans-serif;
+};
+
+.wrapper {
+    background: repeating-radial-gradient(circle, #111111, #2d2d2d 10px, #343434 10px, #313131 20px);
+};
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    background-color: rgb(42 42 42 / 88%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    height: 100%;
+};
+
+.left_bar {
+    width: 18%;
+    background: linear-gradient(to right, #3c3b3b00,#7c7c7c00,#6e6e6e00,#61616100, #3c3c3c00, #eeebeb0c);
+    height: 100%;
+};
+
+.content{
+    width: 78%;
+    background: linear-gradient(to right, #eeebeb0c, #3c3c3c61, #6e6e6e0b, #29292921, #32313111);
+    height: 100%;
+};

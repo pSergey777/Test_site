@@ -1,0 +1,39 @@
+* {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.wrapper {
+  background: repeating-radial-gradient(circle, #111111, #2d2d2d 10px, #343434 10px, #313131 20px);
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  background-color: rgba(42, 42, 42, 0.88);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  height: 100%;
+}
+
+.left_bar {
+  width: 18%;
+  background: linear-gradient(to right, rgba(60, 59, 59, 0), rgba(124, 124, 124, 0), rgba(110, 110, 110, 0), rgba(97, 97, 97, 0), rgba(60, 60, 60, 0), rgba(238, 235, 235, 0.0470588235));
+  height: 100%;
+}
+
+.content {
+  width: 78%;
+  background: linear-gradient(to right, rgba(238, 235, 235, 0.0470588235), rgba(60, 60, 60, 0.3803921569), rgba(110, 110, 110, 0.0431372549), rgba(41, 41, 41, 0.1294117647), rgba(50, 49, 49, 0.0666666667));
+  height: 100%;
+}/*# sourceMappingURL=main_body.css.map */

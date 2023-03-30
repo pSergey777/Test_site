@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main_header.css">
+    <link rel="stylesheet" href="styles/main_body.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header>
@@ -36,16 +38,23 @@
     </header>
 <div class="wrapper">
     <div class="container">
-
+        <div class="main">
+            <div class="left_bar"></div>
+            <div class="content"></div>
+        </div>
     </div>
 </div>
 <footer>
-    <div class="info"></div>
-    <div class="map">
-        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Нижний Новгород</a><a href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=43.873926%2C56.333696&utm_medium=mapframe&utm_source=maps&z=16.45" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=43.873926%2C56.333696&z=16.45" width="450" height="220" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-    </div>
+    <div class="footer_info"></div>
+    <button class="btn_map">Карта
+        <div class="map">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Нижний Новгород</a><a href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=43.873926%2C56.333696&utm_medium=mapframe&utm_source=maps&z=16.45" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=43.873926%2C56.333696&z=16.45" width="450px" height="220px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </button>
 </footer>
     <script src="scripts/cart.js"></script>
+
+    <script src="scripts/footer.js"></script>
     <script src="https://kit.fontawesome.com/6bb95cc91c.js" crossorigin="anonymous"></script>
 </body>
 </html>

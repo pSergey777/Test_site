@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .footer_info {
+  width: 50%;
+  height: 35px;
+  background-color: #fff;
+}
+footer .btn_map {
+  width: 5%;
+  height: 30px;
+  position: relative;
+}
+footer .map {
+  width: 450px;
+  max-height: 100%;
+  position: absolute;
+  bottom: 235px;
+  right: 20px;
+  visibility: hidden;
+}/*# sourceMappingURL=footer.css.map */
