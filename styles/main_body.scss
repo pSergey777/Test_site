@@ -1,5 +1,7 @@
 *{
     font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
 };
 
 .wrapper {
@@ -17,7 +19,6 @@
     flex-direction: column;
     align-items:center;
     justify-content:space-between;
-
 }
 
 .main {
@@ -31,6 +32,45 @@
     width: 18%;
     background: linear-gradient(to right, #3c3b3b00,#7c7c7c00,#6e6e6e00,#61616100, #3c3c3c00, #eeebeb0c);
     height: 100%;
+
+    .catalog {
+        max-width: 98%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .catalog li {
+        width: 80%;
+        height: 2.5%; 
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        background-color: #fff; 
+        border-radius: 4px;
+    };
+
+    .catalog a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-right: 10px;
+        color: #111111;
+    };
+    .catalog a:hover {
+        color: #8f8f8f;
+    };
+
+    .catalog img {
+        width: 10%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 15px;
+    };
+
 };
 
 .content{

@@ -1,5 +1,7 @@
 * {
   font-family: "Ubuntu Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -30,6 +32,40 @@
   width: 18%;
   background: linear-gradient(to right, rgba(60, 59, 59, 0), rgba(124, 124, 124, 0), rgba(110, 110, 110, 0), rgba(97, 97, 97, 0), rgba(60, 60, 60, 0), rgba(238, 235, 235, 0.0470588235));
   height: 100%;
+}
+.left_bar .catalog {
+  max-width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.left_bar .catalog li {
+  width: 80%;
+  height: 2.5%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.left_bar .catalog a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 10px;
+  color: #111111;
+}
+.left_bar .catalog a:hover {
+  color: #8f8f8f;
+}
+.left_bar .catalog img {
+  width: 10%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 15px;
 }
 
 .content {
