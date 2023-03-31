@@ -370,7 +370,6 @@ html, body {
   height: 100%;
  }
  body {
-  display: flex;
   flex-direction: column;
  }
  .wrapper {   /*Создать div с таким названием после хедера и до футера или .content*/

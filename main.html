@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main_header.css">
     <link rel="stylesheet" href="styles/main_body.css">
@@ -40,21 +41,78 @@
     <div class="container">
         <div class="main">
             <div class="left_bar">
-                <ul class="catalog">
-                    <li><a href=""><img src="img/icons/iphone.svg" alt="iPhone" class="">iPhone</a></li>
-                    <li><a href=""><img src="img/icons/airpod.svg" alt="AirPods" class="">AirPods</a></li>
-                    <li><a href=""><img src="img/icons/iwatch.svg" alt="AppleWatch" class="">AppleWatch</a></li>
-                    <li><a href=""><img src="img/icons/ipad.svg" alt="iPad" class="">iPad</a></li>
+                <menu class="catalog">
+                    <li><a href=""><img src="img/icons/iphone.svg" alt="iPhone">iPhone</a></li>
+                    <li><a href=""><img src="img/icons/airpod.svg" alt="AirPods">AirPods</a></li>
+                    <li><a href=""><img src="img/icons/iwatch.svg" alt="AppleWatch">AppleWatch</a></li>
+                    <li><a href=""><img src="img/icons/ipad.svg" alt="iPad">iPad</a></li>
                     <li><a href=""><img src="img/icons/macbook.svg" alt="MacBook" class="">MacBook</a></li>
-                    <li><a href=""><img src="img/icons/ipod.svg" alt="iPod" class="">iPod</a></li>
-                    <li><a href=""><img src="img/icons/appletv.svg" alt="AppleTV" class="">AppleTV</a></li>
-                    <li><a href=""><img src="img/icons/accessories.svg" alt="accessories" class="">Аксессуары</a></li>
-                </ul>
+                    <li><a href=""><img src="img/icons/ipod.svg" alt="iPod">iPod</a></li>
+                    <li><a href=""><img src="img/icons/appletv.svg" alt="AppleTV">AppleTV</a></li>
+                    <li><a href=""><img src="img/icons/accessories.svg" alt="accessories">Аксессуары</a></li>
+                </menu>
             </div>
             <div class="content">
-                <div class="slide"></div>
+                <div class="slide">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" >
+                          <div class="carousel-item active" >
+                            <img src="img/phones/x_front.png" class="d-block w-100" alt="phones">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Не новый iPhone X</h5>
+                                <p>Норм телефон, только не бери 64гб.</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/watch/5.png" class="d-block w-100" alt="watch">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Не новые AppleWatch 5</h5>
+                                <p>Но один в один как 6е, так что повыше руку в толпе когда смотришь время.</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/pods/pro.png" class="d-block w-100" alt="pods">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Топовые AirPods Pro</h5>
+                                <p>Приставка ПРО тебе о чем нибудь говорит?!, но китайцы уже наподделовали кучу таких.</p>
+                              </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <h1 class="header">Горячие товары</h1>
                 <div class="cards">
-                    <div class="card"></div>
+                    <div class="card">
+                        
+                    </div>
+                    <div class="card">
+                        
+                    </div>
+                    <div class="card">
+                        
+                    </div>
+                    <div class="card">
+                        
+                    </div>
+                    <div class="card">
+                        
+                    </div>
+                    <div class="card">
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,5 +130,6 @@
 
     <script src="scripts/footer.js"></script>
     <script src="https://kit.fontawesome.com/6bb95cc91c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -24,14 +24,14 @@
 .main {
     display: flex;
     justify-content: center;
-    width: 98%;
+    width: 100%;
     height: 100%;
 };
 
 .left_bar {
     width: 18%;
     background: linear-gradient(to right, #3c3b3b00,#7c7c7c00,#6e6e6e00,#61616100, #3c3c3c00, #eeebeb0c);
-    height: 100%;
+    padding-top: 2%;
 
     .catalog {
         max-width: 98%;
@@ -39,6 +39,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 50px;
+        margin-left: 2%;
     }
 
     .catalog li {
@@ -74,7 +75,49 @@
 };
 
 .content{
-    width: 78%;
+    width: 82%;
     background: linear-gradient(to right, #eeebeb0c, #3c3c3c61, #6e6e6e0b, #29292921, #32313111);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    
+    .slide{
+        width: 100%;
+        background-color: rgb(0 0 0 / 5%);
+
+        .carousel-item {
+            height: 500px;
+        };
+    
+        .carousel-item img {
+            object-fit: contain;
+            height: 100%;
+        };
+    
+        .carousel-caption {
+            background: rgb(20 20 20 / 30%);
+            // background: #0000004d;
+            border-radius: 10px;
+        };
+    };
+
+    .header {
+        color: #fff;
+    };
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .card {
+            width: 29.3%;
+            height: 400px;
+            background-color: #fff;
+            margin: 2%;
+        };
+
+    };
 };
