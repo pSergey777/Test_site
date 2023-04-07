@@ -114,10 +114,244 @@
 
         .card {
             width: 29.3%;
-            height: 400px;
-            background-color: #fff;
+            height: 425px;
             margin: 2%;
+            border: 0;
+            background: rgb(143,143,143);
+            background: linear-gradient(0deg, rgba(143,143,143,1) 0%, rgba(173,173,173,1) 50%, rgba(203,203,203,1) 100%);
+
+            .top_card {
+                height: 59%;
+                width: 100%;
+                margin: 0;
+                flex-grow: 1;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1%;
+
+                .setting_card_images {
+                    height: 98%;
+                    width: 100%;
+                    display: block;
+                    
+                    .card_fields {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: stretch;
+                        cursor: pointer;
+                        position: absolute;
+                        inset: 0px;
+                        z-index: 1;
+    
+                        .card_field_left {
+                            flex-grow: 1;
+                        };
+    
+                        .card_field_right {
+                            flex-grow: 1;
+                        };
+                    };
+                
+                    .card_images {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        user-select: none;
+
+                    };
+                    
+                    .card_images img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        object-position: center center;
+                        position: relative;
+                        min-width: 100%;
+                        transform: translate3d(0%, 0px, 0px);
+                    };
+    
+    
+                };
+
+                .card_points {
+                    width: 5%;
+                    height: 2%;
+                    display: flex;
+                    justify-content:space-between;
+                    align-items:center;
+
+                    .card_point {
+                        width: 4px;
+                        height: 4px;
+                        background-color: #fff;
+                        border-color: black;
+                        border-radius: 50%;
+                        
+                    };
+                };
+            };
+
+            .bottom_card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 39%;
+                margin-top: 1%;
+
+                .raiting {
+                    width: 100%;
+                    height: 15%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+
+                    .stars{
+                          height: 100%;
+                          .rating-wrapper {
+                            align-self: center;
+                            box-shadow: 7px 7px 25px rgb(169 169 169 / 70%), -7px -7px 35px rgb(175 175 175 / 70%), inset 0px 0px 4px rgb(106 106 106 / 90%), inset 7px 7px 15px rgb(209 209 209 / 80%);
+                            border-radius: 5rem;
+                            display: inline-flex;
+                            direction: rtl !important;
+                            align-items: center;
+                            height: 100%;
+                    
+                            label {
+                                color: #8b8b8b;
+                                cursor: pointer;
+                                display: inline-flex;
+                                font-size: 12px;
+                                padding: 5px;
+                                transition: color 0.5s;
+                            }
+                            
+                             svg {
+                               -webkit-text-fill-color: transparent;
+                               -webkit-filter: drop-shadow (4px 1px 6px rgb(139, 139, 139));
+                               filter:drop-shadow(5px 1px 3px rgb(106, 106, 106));
+                            }
+                          
+                            input {
+                              height: 100%;
+                              width: 100%;
+                            }
+                            
+                            input {
+                              display: none;
+                            }
+                          
+                            label:hover,
+                            label:hover ~ label,
+                            input:checked ~ label  {
+                              color: #34AC9E;
+                            }
+                          
+                            label:hover,
+                            label:hover ~ label,
+                            input:checked ~ label  {
+                            color: rgba(42, 42, 42, 0.88);
+                            };
+                          };
+                    };
+
+                    .feedback {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: auto;
+                        height: 100%;
+
+                        .btn_feedback {
+                            background: none;
+                            border: none;
+                            width: 100%;
+                            height: 100%;
+                            padding: 0;
+                            margin: 0;
+                            text-align: center;
+                            display: flex;
+                            align-items: center
+                        };
+
+                        .btn_feedback i {
+                            padding-right: 5px;
+                        };
+                        
+                        .btn-primary{
+                            background: rgba(42, 42, 42, 0.88);
+                            border-color: rgba(42, 42, 42, 0.88);
+                        };
+                    };
+                };
+                
+                .card_name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;   
+                    width: 100%;
+                    height: 30%;
+                    margin: 0;
+                };
+
+                .card_cart {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    height: 55%;
+
+                    .price{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        width: 50%;
+                        height: 100%;
+
+                        span {
+                            font-size: 10px; 
+                            text-align: center;
+                        };
+        
+                        p {
+                            margin: 0;
+                        };
+
+                        h5 {
+                            margin: 0;
+                        };
+
+                        .availability{
+                            display: flex;
+                        };  
+                        
+                    };
+
+                    .btn_card{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        width: 50%;
+                        height: 100%;
+
+                        .add_btn_card, .add_btn_favourites {
+                            background: none;
+                            border: none;
+                            font-size: 25px
+                        };
+
+                    };
+                };
+            };
         };
 
     };
 };
+
