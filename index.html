@@ -19,11 +19,11 @@
                 <title class="authentification_title">Авторизация</title>
                 <form action="" class="form">
                     <div class="login">
-                        <input type="text" autocomplete="on" placeholder="login" class="input_login">
+                        <input type="text" autocomplete="on" placeholder="login" class="input_login" required><!-- команда required не дает отправить незаполненное поле-->  
                         <label class="error" id="errorLogin"></label>
                     </div>
                     <div class="password">
-                        <input type="password" name="password" id="" autocomplete="on" placeholder="password" class="input_password">
+                        <input type="password" name="password" id="" autocomplete="on" placeholder="password" class="input_password" required>
                         <a href="#" class="see_pass"><img src="img/eye-slash-solid.svg" alt="eye" class="see_pass_img"></a>
                         <label class="error" id="errorPass"></label>
                     </div>

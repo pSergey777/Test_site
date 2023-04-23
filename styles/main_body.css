@@ -41,6 +41,18 @@
   margin-top: 50px;
   margin-left: 2%;
 }
+.left_bar .catalog .catalog-animation {
+  transform: translateY(-150%);
+  animation: catalog-animation 1.5s forwards;
+}
+@keyframes catalog-animation {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .left_bar .catalog li {
   width: 80%;
   height: 2.5%;
@@ -101,6 +113,18 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+.content .cards .card-animation {
+  transform: translateY(100%);
+  animation: card-animation 1s forwards;
+}
+@keyframes card-animation {
+  0% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .content .cards .card {
   width: 29.3%;

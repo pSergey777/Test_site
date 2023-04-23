@@ -40,6 +40,16 @@
         flex-direction: column;
         margin-top: 50px;
         margin-left: 2%;
+
+        .catalog-animation {
+            transform: translateY(-150%);
+            animation: catalog-animation 1.5s forwards;
+          }
+          
+          @keyframes catalog-animation {
+            0% {transform: translateY(-150%);}
+            100% {transform: translateY(0);}
+          }
     }
 
     .catalog li {
@@ -107,10 +117,22 @@
         color: #fff;
     };
 
+
+
     .cards {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+
+        .card-animation {
+            transform: translateY(100%);
+            animation: card-animation 1s forwards;
+          }
+          
+          @keyframes card-animation {
+            0% {transform: translateY(80%);}
+            100% {transform: translateY(0);}
+          }
 
         .card {
             width: 29.3%;
@@ -119,6 +141,8 @@
             border: 0;
             background: rgb(143,143,143);
             background: linear-gradient(0deg, rgba(143,143,143,1) 0%, rgba(173,173,173,1) 50%, rgba(203,203,203,1) 100%);
+
+            
 
             .top_card {
                 height: 59%;

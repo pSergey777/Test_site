@@ -35,7 +35,38 @@ if (exampleModal) {
     modalTitle.textContent = `New message to ${recipient}`
     modalBodyInput.value = recipient
   })
-}
+};
+
+// Анимация элементов при загрузке 
+
+// Карточки
+document.addEventListener('DOMContentLoaded', () => {
+cardAnimation = document.querySelectorAll('.card');
+  for (let i = 0; i < cardAnimation.length; i++) {
+    const cardAnimations = cardAnimation[i];
+      if (DOMContentLoaded = true) {
+        cardAnimations.classList.add('card-animation');
+      };
+    };
+});
+
+
+// Боковое меню
+document.addEventListener('DOMContentLoaded', () => {
+  cartalogAnimation = document.querySelectorAll('.catalog > li');
+    for (let i = 0; i < cartalogAnimation.length; i++) {
+      const cartalogAnimations = cartalogAnimation[i];
+        // if (DOMContentLoaded = true) {
+        //   cartalogAnimations.classList.add('catalog-animation');
+        // };
+        addEventListener('DOMContentLoaded', () => {
+          cartalogAnimations.classList.add('catalog-animation');
+        });
+      };
+  });
+
+
+  
 
 
 

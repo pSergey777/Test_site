@@ -5,7 +5,7 @@ const pass = document.querySelector('.input_password');
 // const htmlText = `<label class="rerror_login">заполни</label>;`
 
 form.addEventListener(`submit`, (event) => {
-  event.preventDefault();//Не дает обнавлять страницу
+  event.preventDefault();//Не дает обнавлять страницу(Отклчает обработку HTML страницы после отправления формы)
    if (login.value === '') {
         document.getElementById('errorLogin').innerHTML =
             `<label class="error">Введите логин</label>`;           
@@ -16,7 +16,8 @@ form.addEventListener(`submit`, (event) => {
         else document.getElementById(`errorSignIn`).innerHTML =
     `<label class="error error_sign_in">'Не верный логин или пароль. Вход запрещен!</label>`;
             // alert ('Не верный логин или пароль. Вход запрещен!');        
-      }   
+      },
+    // { once: true }  выполняет функцию один раз    
 );
 
 window.addEventListener('click', (e) => { //Убираем всплывающие ошибки по клику, но не на кнопку
