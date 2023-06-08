@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "imgOne": "img/phones/1.png",
+        "imgTwo": "img/phones/1_right.png",
+        "alt": "iphone 1",
+        "title": "Apple iPhone 1 8GB",
+        "availability": 1,
+        "price": 499999
+    },
+
+    {
+        "id": 2,
+        "imgOne": "img/phones/5s.png",
+        "imgTwo": "img/phones/5.png",
+        "alt": "iphone 5s",
+        "title": "Apple iPhone 5S 16GB",
+        "availability": 8,
+        "price": 210000
+    }
+    
+]

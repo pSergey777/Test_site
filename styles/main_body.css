@@ -10,11 +10,11 @@
 
 .container {
   max-width: 1170px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   background-color: rgba(42, 42, 42, 0.88);
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

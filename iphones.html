@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main_header.css">
+    <link rel="stylesheet" href="styles/main_body.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/iphones.css">
+</head>
+<body>
+    <header>
+        <nav class="head">
+            <a href="main.html" class="fa-brands fa-apple"></a>
+            <div class="rightmenu">
+                <form action="" class="search">
+                    <input type="text" class="search_input">
+                    <button type="submit" class="search_btn">Поиск</button>
+                </form>               
+                <button class="btn_exit"><a href="index.html">Выйти из системы</a></button>
+                <div class="cart">
+                    <button id="cart_btn" type="submit" class="fa-brands fa-opencart"></button>
+                    <div class="cart_window" id="cart_window">
+                        <div class="cart_window_info">
+                            <div class="cart_window_productList">
+                                <img src="img/phones/1.png" alt="product" class="cart_window_img">
+                                <h3 class="cart_window_productName">Apple iPhone 1 8GB</h3>
+                                <div class="cart_window_count">
+                                    <div class="quantity_inner">        
+                                        <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
+                                        <button class="bt_plus">
+                                            <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                                        </button>
+                                        <button class="bt_minus">
+                                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                        </button>
+                                        <button class="bt_buy">
+                                            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                        </button>       
+                                    </div>
+                                </div>
+                                <h4 class="cart_window_price">499999 руб</h4>
+                                <img src="img/trash-arrow-up-solid.svg" alt="delete product" class="cart_window_delete"></img>>
+                            </div>
+                            <div class="cart_window_btn">
+                                <div class="cart_window_buy">оформить заказ</div>
+                                <div class="cart_window_clear">Очистить корзину</div>
+                            </div>
+                        </div>
+                        <div class="cart_btn_close" >
+                            <img id="cart_btn_close" src="img/close_button_ewe9z3za6j5d.svg" alt="close">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="wrapper">
+    <div class="container">
+        <div class="main">
+            <div class="left_bar">
+                <menu class="catalog">
+                    <li><a href="#"><img src="img/icons/iphone.svg" alt="iPhone">iPhone</a></li>
+                    <li><a href=""><img src="img/icons/airpod.svg" alt="AirPods">AirPods</a></li>
+                    <li><a href=""><img src="img/icons/iwatch.svg" alt="AppleWatch">AppleWatch</a></li>
+                    <li><a href=""><img src="img/icons/ipad.svg" alt="iPad">iPad</a></li>
+                    <li><a href=""><img src="img/icons/macbook.svg" alt="MacBook" class="">MacBook</a></li>
+                    <li><a href=""><img src="img/icons/ipod.svg" alt="iPod">iPod</a></li>
+                    <li><a href=""><img src="img/icons/appletv.svg" alt="AppleTV">AppleTV</a></li>
+                    <li><a href=""><img src="img/icons/accessories.svg" alt="accessories">Аксессуары</a></li>
+                </menu>
+            </div>
+            <div class="content">
+                <h1 class="header">iPhone's</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer_info"></div>
+    <button class="btn_map">Карта
+        <div class="map">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Нижний Новгород</a><a href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=43.873926%2C56.333696&utm_medium=mapframe&utm_source=maps&z=16.45" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=43.873926%2C56.333696&z=16.45" width="450px" height="220px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </button>
+</footer>
+    <script src="scripts/renderProducts.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/card.js" ></script>
+
+    <!-- <script type="module" src="scripts/renderProducts.js"></script> -->
+    <!-- <script src="scripts/testJsRender.js"></script> -->
+
+    <script src="scripts/footer.js"></script>
+    <script src="https://kit.fontawesome.com/6bb95cc91c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

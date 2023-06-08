@@ -27,7 +27,32 @@
                 <div class="cart">
                     <button id="cart_btn" type="submit" class="fa-brands fa-opencart"></button>
                     <div class="cart_window" id="cart_window">
-                        <div class="cart_window_info"></div>
+                        <div class="cart_window_info">
+                            <div class="cart_window_productList">
+                                <img src="img/phones/1.png" alt="product" class="cart_window_img">
+                                <h3 class="cart_window_productName">Apple iPhone 1 8GB</h3>
+                                <div class="cart_window_count">
+                                    <div class="quantity_inner">        
+                                        <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
+                                        <button class="bt_plus">
+                                            <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                                        </button>
+                                        <button class="bt_minus">
+                                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                        </button>
+                                        <button class="bt_buy">
+                                            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                        </button>       
+                                    </div>
+                                </div>
+                                <h4 class="cart_window_price">499999 руб</h4>
+                                <img src="img/trash-arrow-up-solid.svg" alt="delete product" class="cart_window_delete"></img>>
+                            </div>
+                            <div class="cart_window_btn">
+                                <div class="cart_window_buy">оформить заказ</div>
+                                <div class="cart_window_clear">Очистить корзину</div>
+                            </div>
+                        </div>
                         <div class="cart_btn_close" >
                             <img id="cart_btn_close" src="img/close_button_ewe9z3za6j5d.svg" alt="close">
                         </div>
@@ -42,7 +67,7 @@
         <div class="main">
             <div class="left_bar">
                 <menu class="catalog">
-                    <li><a href=""><img src="img/icons/iphone.svg" alt="iPhone">iPhone</a></li>
+                    <li><a href="iphones.html"><img src="img/icons/iphone.svg" alt="iPhone">iPhone</a></li>
                     <li><a href=""><img src="img/icons/airpod.svg" alt="AirPods">AirPods</a></li>
                     <li><a href=""><img src="img/icons/iwatch.svg" alt="AppleWatch">AppleWatch</a></li>
                     <li><a href=""><img src="img/icons/ipad.svg" alt="iPad">iPad</a></li>
@@ -94,122 +119,7 @@
                       </div>
                 </div>
                 <h1 class="header">Горячие товары</h1>
-                <div class="cards">
-                    <div class="card">                        
-                        <div class="top_card">
-                            <div class="setting_card_images">
-                                <div class="card_images">
-                                    <img src="img/phones/1.png" alt="iphone 1" id="cardImagesOne" style="left: 0;">
-                                    <img src="img/phones/1_right.png" alt="iphone 1 right" id="cardImagesTwo">
-                                </div>
-                                <div class="card_fields">
-                                    <div class="card_field_left"></div>
-                                    <div class="card_field_right"></div>
-                                </div>
-                                <!-- <button id="btn_phono">Быстрый просмотр</button> -->
-                            </div>
-                            <div class="card_points">
-                                <div class="card_point" id="cardPointOne"></div>
-                                <div class="card_point" id="cardPointTwo"></div>
-                            </div>
-                        </div>
-                        <div class="bottom_card">
-                               <div class="raiting">
-                                <div class="stars">                            
-                                            <div class="rating-wrapper">
-                                              
-                                              <!-- star 5 -->
-                                              <input type="radio" id="5-star-rating" name="star-rating" value="5">
-                                              <label for="5-star-rating" class="star-rating">
-                                                <i class="fas fa-star d-inline-block"></i>
-                                              </label>
-                                              
-                                               <!-- star 4 -->
-                                              <input type="radio" id="4-star-rating" name="star-rating" value="4">
-                                              <label for="4-star-rating" class="star-rating star">
-                                                <i class="fas fa-star d-inline-block"></i>
-                                              </label>
-                                              
-                                               <!-- star 3 -->
-                                              <input type="radio" id="3-star-rating" name="star-rating" value="3">
-                                              <label for="3-star-rating" class="star-rating star">
-                                                <i class="fas fa-star d-inline-block"></i>
-                                              </label>
-                                              
-                                              <!-- star 2 -->
-                                              <input type="radio" id="2-star-rating" name="star-rating" value="2">
-                                              <label for="2-star-rating" class="star-rating star">
-                                                <i class="fas fa-star d-inline-block"></i>
-                                              </label>
-                                              
-                                              <!-- star 1 -->
-                                              <input type="radio" id="1-star-rating" name="star-rating" value="1">
-                                              <label for="1-star-rating" class="star-rating star">
-                                                <i class="fas fa-star d-inline-block"></i>
-                                              </label>
-
-                                            </div>    
-                                </div>
-                                <div class="feedback">
-                                    <button type="button" class="btn btn_feedback" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="pSergey777@mail.ru">
-                                        <i class="fa-regular fa-comment fa-shake" style="color: black;"></i>Отзывы</button>
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ваш отзыв крайне важен для нас</h1>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Ваша почта:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="message-text" class="col-form-label">Ваш отзыв:</label>
-                                                        <textarea class="form-control" id="message-text"></textarea>
-                                                    </div>
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Send message</button>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                                <h5 class="card_name">Apple iPhone 1 16GB </h5>
-                                <div class="card_cart">
-                                    <div class="price">
-                                        <p class="availability">В наличии: 1 <span>шт</span></p>  
-                                        <h5 class="price_count">Цена: 499999 <span>₽</span></h5>  
-                                    </div>
-                                    <div class="btn_card">
-                                        <button class="add_btn_favourites"><i class="fa-regular fa-bookmark fa-flip fa-xs" style="color: black;"></i></i></button>
-                                        <button class="add_btn_card"><i class="fa-sharp fa-solid fa-cart-plus fa-bounce" style="color: black;"></i></button>
-                                    </div>
-                                
-                               </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
+                <div class="cards" id="products">
                 </div>
             </div>
         </div>
@@ -223,8 +133,12 @@
         </div>
     </button>
 </footer>
+    <script src="scripts/renderProducts.js"></script>
     <script src="scripts/cart.js"></script>
-    <script src="scripts/card.js"></script>
+    <script src="scripts/card.js" ></script>
+
+    <!-- <script type="module" src="scripts/renderProducts.js"></script> -->
+    <!-- <script src="scripts/testJsRender.js"></script> -->
 
     <script src="scripts/footer.js"></script>
     <script src="https://kit.fontawesome.com/6bb95cc91c.js" crossorigin="anonymous"></script>
